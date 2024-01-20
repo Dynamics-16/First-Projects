@@ -1,0 +1,36 @@
+/* CSS Reset */
+
+
+
+
+
+h1 {
+    font-size: 50px;
+    color: #37375a;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+  color: #550000;
+  font-family: sans-serif;
+
+}
+
+
+img {
+  align-items: center;
+  width: 10%;
+  height: auto;
+}
+
+.submit {
+  font-style: bold;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  background: #242434;
+  color: #fff;
+
+}
+
