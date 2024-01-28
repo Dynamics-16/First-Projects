@@ -19,6 +19,7 @@
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#things-I-need-to-improve">Things I need to improve</a></li>
                 <li><a href="#a-timeline">A Timeline</a></li>
+                <li><a href="#javascript-basics">JavaScript "Basics"</a></li>
             </ul>
         </nav>
 
@@ -180,6 +181,67 @@
                 </tr>
             </tbody>
         </table>
+    </section>
+
+    <section>
+        <h2 id="javascript-basics">JavaScript "Basics"</h2>
+
+        <p>I have just started to learn JavaScript (27/01/2024). I think it may be a good idea to note some things down from what I learn, this way I get the best of both worlds - I can continue learning JavaScript and also practice my HTML in the process! </p>
+
+        <ul>
+            <li>
+                <pre><code>&lt;Script&gt;&lt;/Script&gt;</code></pre>
+                <p>This element is used to load Javascript into your HTML file! Don't forget to include the src attribute (i.e. ./script.js).</p>
+                <p>The <code>&lt;script&gt;</code> element in HTML can be placed in the <code>&lt;head&gt;</code> section or the <code>&lt;body&gt;</code> section of your HTML document. The placement depends on what you are trying to achieve.</p>
+                <br>
+                <p><strong>Here are the considerations for each placement:</strong></p>
+                <p><em>In the <code>&lt;head&gt;</code> section:</em></p>
+                <p>Placing scripts in the <code>&lt;head&gt;</code> section is common when the script contains functions, variables, or other code that needs to be loaded before the rest of the page.</p>
+                <p>This is often the case when you want to define functions or variables that are going to be used throughout your entire document.</p>
+                <br>
+                <p><em>Before the closing <code>&lt;/body&gt;</code> tag:</em></p>
+
+                <p>Placing scripts just before the closing <code>&lt;/body&gt;</code> tag is common when you want to ensure that the HTML content is loaded before the scripts are executed.</p>
+                <p>This can improve the perceived page load time because the browser doesn't have to wait for the scripts to be downloaded and executed before rendering the page.</p>
+            </li>
+            <br>
+            <li>
+                <pre><code>var</code></pre>
+                <p>In JavaScript a variable is used to hold a value. To use a variable you must first <em>declare</em> it! For example:</p>
+                <pre><code>var camperbot;</code></pre>
+                <p><em>As you can see, <strong>camperbot</strong> is the variable!</em></p>
+                <p>Variables can be assigned a value. When you do this while you declare it, this is called <strong>initialization</strong>. For example:</p>
+                <pre><code>var camperbot = "Bot";</code></pre>
+                <p><em>This would initialize the camperbot variable with a value of <strong>Bot</strong>, a string.</em></p>
+                <p>Do note: When a variable name has multiple words, the convention in JavaScript is to use what's called camelCase. The first word is lowercase, and the first letter of every following word is uppercase.</p>
+            </li>
+            <br>
+            <li>
+                <pre><code>let</code></pre>
+                <p>In modern JavaScript, it's best practice to use the keyword <code>let</code> instead of the keyword <code>var</code>.</p>
+                <p>This fixes several unusual behaviors with var that can make your code difficult to debug.</p>
+            </li>
+            <br>
+            <li>
+                <pre><code>const</code></pre>
+                <p>If you are not going to assign a new value to a variable, it is best practice to use the <code>const</code> keyword to declare it instead of the <code>let</code> keyword.</p>
+                <p>This will tell JavaScript to throw an error if you accidentally reassign it.</p>
+            </li>
+            <br>
+            <li>
+                <p><em><strong>Strings</strong></em></p>
+                <p>JavaScript has multiple different data types. <em>Strings</em> are used to store things like words or text. <em>Strings</em> are surrounded with double quotes, single quotes, or backticks.</p>
+                <p>Here is an example of declaring a variable with a string:</p>
+                <pre><code>let developer = "Naomi";</code></pre>
+            </li>
+            <br>
+            <li>
+                <p><em><strong>Arrays</strong></em></p>
+                <p>An <em>array</em> can be used to hold multiple values. For example:</p>
+                <pre><code>let order = ["first", "second", "third"];</code></pre>
+                <p>This is an <em>array</em> which holds three values. Notice how the values are separated by commas.</p>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
