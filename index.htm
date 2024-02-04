@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <h1>My First "Website"!</h1>
 
@@ -20,6 +21,7 @@
                 <li><a href="#things-I-need-to-improve">Things I need to improve</a></li>
                 <li><a href="#a-timeline">A Timeline</a></li>
                 <li><a href="#javascript-basics">JavaScript "Basics"</a></li>
+                <li><a href="#javascript-in-action">JavaScript in action!</a></li>
             </ul>
         </nav>
 
@@ -187,7 +189,7 @@
         <h2 id="javascript-basics">JavaScript "Basics"</h2>
 
         <p>I have just started to learn JavaScript (27/01/2024). I think it may be a good idea to note some things down from what I learn, this way I get the best of both worlds - I can continue learning JavaScript and also practice my HTML in the process! </p>
-
+        <br>
         <ul>
             <li>
                 <pre><code>&lt;Script&gt;&lt;/Script&gt;</code></pre>
@@ -247,12 +249,24 @@
                 <p>The <code>getElementById</code> method can "find" an HTML element and can change the element content.</p>
                 <p>It can also change HTML attribute values, alter CSS styles and hide/show html elements!</p>
                 <p>If you scroll down below, you can see a few examples of this!</p>
+                <br>
+            <li>
+                <p><code>window.alert()</code></p>
+                <p>The <code>window.alert()</code> method is used to display a dialog box with a specified message and an 'OK' button</p>
+                <p>The 'window' object represents the global browser window or tab, and the 'alert' is a method attached to this object!</p>
         </ul>
     </section>
     <br>
     <section>
-        <h3>JavaScript in action!</h3>
 
+        <h2 id="javascript-in-action">JavaScript in action!</h2>
+        <p><em>Section started 04/02/2024.</em></p>
+        <p>Here is a section where I can put some JavaScript to use! <strong><em>(Do note: I won't list everything I learn down)</em></strong></p>
+        <p>I'll try my best to order things from easy to hard, although there may be more complex JavaScript mixed in with the easier stuff.</p>
+        <p>Unfortunately, FreeCodeCamp isn't functioning properly so I've had to resort to W3Schools. A lot of the following information is from W3Schools which I have written out myself.</p>
+
+            <br>
+        <!--getElementById-->
         <h4><code>getElementById</code></h4>
         <p id="demo1">Click the "#1" button to see an example of JavaScript "finding" and changing an elements content!</p>
         <button type="button" onclick='document.getElementById("demo1").innerHTML = "Can you see the change?"'>#1</button>
@@ -264,6 +278,21 @@
         <br>
         <p id="demo3">Click the "#3" button to see JavaScript change the font size of this text!</p>
         <button type="button" onclick="document.getElementById('demo3').style.fontSize='40px'">#3</button>
+        <br>
+        <br>
+        <!--window.alert-->
+        <h4><code>window.alert()</code></h4>
+        <p>Click to see an alert message!</p>
+        <button id="alertButton">Alert</button>
+        <script>
+            //function to display the alert
+            function showAlert() {
+                alert("You're a walking wetwipe!");
+            }
+
+            //attach event listener to button
+            document.getElementById("alertButton").addEventListener("click", showAlert);
+            </script>
     </section>
 </body>
 </html>
