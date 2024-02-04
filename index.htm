@@ -241,7 +241,29 @@
                 <pre><code>let order = ["first", "second", "third"];</code></pre>
                 <p>This is an <em>array</em> which holds three values. Notice how the values are separated by commas.</p>
             </li>
+            <br>
+            <li>
+                <p><code>getElementById()</code></p>
+                <p>The <code>getElementById</code> method can "find" an HTML element and can change the element content.</p>
+                <p>It can also change HTML attribute values, alter CSS styles and hide/show html elements!</p>
+                <p>If you scroll down below, you can see a few examples of this!</p>
         </ul>
+    </section>
+    <br>
+    <section>
+        <h3>JavaScript in action!</h3>
+
+        <h4><code>getElementById</code></h4>
+        <p id="demo1">Click the "#1" button to see an example of JavaScript "finding" and changing an elements content!</p>
+        <button type="button" onclick='document.getElementById("demo1").innerHTML = "Can you see the change?"'>#1</button>
+        <br>
+        <br>
+        <p id="demo2">Click the "#2" button to see an example of Javascript hiding an HTML element!</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'">#2</button>
+        <br>
+        <br>
+        <p id="demo3">Click the "#3" button to see JavaScript change the font size of this text!</p>
+        <button type="button" onclick="document.getElementById('demo3').style.fontSize='40px'">#3</button>
     </section>
 </body>
 </html>
