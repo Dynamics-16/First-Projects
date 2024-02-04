@@ -264,12 +264,30 @@
         <p>Here is a section where I can put some JavaScript to use! <strong><em>(Do note: I won't list everything I learn down)</em></strong></p>
         <p>I'll try my best to order things from easy to hard, although there may be more complex JavaScript mixed in with the easier stuff.</p>
         <p>Unfortunately, FreeCodeCamp isn't functioning properly so I've had to resort to W3Schools. A lot of the following information is from W3Schools which I have written out myself.</p>
-
-            <br>
+        <br>
         <!--getElementById-->
         <h4><code>getElementById</code></h4>
         <p id="demo1">Click the "#1" button to see an example of JavaScript "finding" and changing an elements content!</p>
-        <button type="button" onclick='document.getElementById("demo1").innerHTML = "Can you see the change?"'>#1</button>
+        <button type="button" onclick="ToggleContent('#1')">#1</button>
+        <!--I've included a toggle on this button as I was interested to see how I could do it-->
+        <script>
+            let initialState = true; // Initial state
+            let originalContent = "Click the \"#1\" button to see an example of JavaScript \"finding\" and changing an element's content!";
+            let alternativeContent = "Can you see the change?";
+
+            function ToggleContent(buttonId) {
+                let demoElement = document.getElementById("demo1");
+                // Toggle state
+                initialState = !initialState;
+                // Apply state to element's content
+                if (initialState) {
+                    demoElement.innerHTML = originalContent;
+
+                } else {
+                    demoElement.innerHTML = alternativeContent;
+                }
+            }
+        </script>
         <br>
         <br>
         <p id="demo2">Click the "#2" button to see an example of Javascript hiding an HTML element!</p>
