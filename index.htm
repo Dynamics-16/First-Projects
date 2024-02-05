@@ -13,8 +13,8 @@
     <header>
         <h1>My First "Website"!</h1>
 
-        <nav>Navigation Bar
-            <ul>
+        <nav class="nav-1"><p class="nav-1-text">Navigation Bar</p>
+            <ul class="nav-bar">
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#websites-used-so-far">Websites used so far</a></li>
                 <li><a href="#tools">Tools</a></li>
@@ -176,7 +176,8 @@
                     <td>JAN 2024</td>
                     <td>Started first "website" - This HTML document you're currently reading</td>
                 </tr>
-
+                    <td>FEB 2024</td>
+                    <td>Delving into the world of JavaScript</td>
                 <tr>
                     <td>MAR 2024</td>
                     <td>Projected start date of Certificate 3 in I.T (Web Development Stream)</td>
@@ -260,6 +261,7 @@
     <section>
 
         <h2 id="javascript-in-action">JavaScript in action!</h2>
+
         <p><em>Section started 04/02/2024.</em></p>
         <p>Here is a section where I can put some JavaScript to use! <strong><em>(Do note: I won't list everything I learn down)</em></strong></p>
         <p>I'll try my best to order things from easy to hard, although there may be more complex JavaScript mixed in with the easier stuff.</p>
@@ -273,7 +275,7 @@
         <script>
             let initialState = true; // Initial state
             let originalContent = "Click the \"#1\" button to see an example of JavaScript \"finding\" and changing an element's content!";
-            let alternativeContent = "Can you see the change?";
+            let alternativeContent = "Can you see the change? Click again to revert back to original text!";
 
             function ToggleContent(buttonId) {
                 let demoElement = document.getElementById("demo1");
@@ -298,6 +300,26 @@
         <button type="button" onclick="document.getElementById('demo3').style.fontSize='40px'">#3</button>
         <br>
         <br>
+        <p id="demo4">Click the '#4' button to see JavaScript change this STRING to uppper-case!</p>
+        <button type="button" onclick="changeCaseDemo4()">#4</button>
+        <script>
+            function changeCaseDemo4() {
+                let text = document.getElementById("demo4").innerHTML;
+                document.getElementById("demo4").innerHTML =
+                text.toUpperCase();
+            }
+        </script>
+        <br>
+        <br>
+        <p id="demo5">CLICK THE '#5' BUTTON TO SEE JAVASCRIPT CHANGE THIS STRING to lower-case!</p>
+        <button type="button" onclick="changeCaseDemo5()">#5</button>
+        <script>
+            function changeCaseDemo5() {
+                let text = document.getElementById("demo5").innerHTML;
+                document.getElementById("demo5").innerHTML =
+                text.toLowerCase();
+            }
+        </script>
         <!--window.alert-->
         <h4><code>window.alert()</code></h4>
         <p>Click to see an alert message!</p>
